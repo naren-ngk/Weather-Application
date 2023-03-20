@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./app.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="location">
+        <form action="" id="location-form">
+            <label for="location" class="location-timezone">Place:</label>
+            <div class="location-div">
+                <input type="text" id="location" class="location-input" name="query" value="Chennai"
+                    placeholder="Drop your Location">
+                <span class="focus-border"></span>
+            </div>
+        </form>
+        <div id="location-icon">
+            <img src="" alt="" id="image">
+        </div>
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <h2 class="temperature-degree" id="temperature-degree">32</h2>
+            <span>&#176</span>
+            <span id="unit">F</span>
+        </div>
+        <div class="temperature-description" id="temperature-description">Cold</div>
+    </div>
+    <div class="appreciation">
+        <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+
+</html>

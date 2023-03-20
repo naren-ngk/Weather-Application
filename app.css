@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+}
+::placeholder{
+    color: rgba(245, 245, 245, 0.384);
+}
+::selection{
+    background-color: rgba(61, 158, 255, 0.534);
+}
+.location, .temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.location-div{
+    position: relative;
+}
+.temperature{
+    flex-direction: column;
+}
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.degree-section span{
+    margin: 10px;
+    font-size: 55px;
+    user-select: none;
+}
+.degree-section h2{
+    font-size: 75px;
+    user-select: none;
+}
+.location-timezone{
+    font-size: 30px;
+    margin: 15px;
+}
+.location-input{
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.location-input:focus{
+    outline: none;
+}
+.location-input ~ .focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+}
+.location-input:focus ~ .focus-border{
+    width: 100%;
+    transition: 0.5s;
+}
+#image{
+    width: 125px;
+    height: 125px;
+}
+#location-form{
+    display: flex;
+    flex-direction: row;
+}
+.temperature-description{
+    font-size: 30px;
+    font-weight: 200;
+}
+.appreciation{
+    position: absolute;
+    bottom: 1%;
+}
+.appreciation a{
+    color: rgb(255, 148, 148);
+    text-decoration: none;
+}
+.appreciation a:hover{
+    color: rgb(255, 148, 148);
+    cursor: pointer;
+}
